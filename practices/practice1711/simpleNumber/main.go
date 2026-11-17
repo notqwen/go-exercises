@@ -5,18 +5,18 @@ import (
 	"os"
 )
 
-func main(){
+func main() {
 	var number int
 	fmt.Scan(&number)
 
-	if number < 1 {
+	if number < 2 {
 		fmt.Println("Введено неверное число")
 		os.Exit(1)
 	}
 
 	var isNotSimple bool
 	for i := 2; i < number; i++ {
-		if number % i == 0 {
+		if number%i == 0 {
 			isNotSimple = true
 		}
 	}
